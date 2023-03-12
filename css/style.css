@@ -2,15 +2,9 @@
 
 
 
-
-/* Navber  */
-/* Hero Section */
-.btn-color{
-    background-color: #F53838;
-    color: white;
+.btn{
+    color: #F53838;
 }
-
-/* Subscribe Section  */
 .my-icon{
     box-sizing: border-box;
     background-color: #FCEAEA;

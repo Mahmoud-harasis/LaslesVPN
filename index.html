@@ -1,143 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.media.css" />
     <title>LaslesVPN</title>
-    <link rel="shortcut icon" href="images/icon-1.png" type="image/x-icon">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/332314ac0e.js" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- custom stylesheet  -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body style="background-color: #FAFAFA;">
-    <header>
-        <!-- navber -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-ligh mt-3">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/icon.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 px-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#help">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#help">Help</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav justify-content-end ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">
-                                <button type="button" class="btn btn-outline-danger rounded-pill">Sign Up</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  </head>
+  <body>
     <main>
-        <!-- Hero Section -->
-        <section class="container d-flex  justify-content-around my-5">
-            <div class="w-50 lh-lg">
-                <h1 class="fs-1">
-                    Want anything to be
-                    <br>
-                    easy with <strong>LaslesVPN.</strong>
+      <div class="body-overlay"></div>
+      <div class="sec sec-1">
+        <div class="wrapper">
+          <header>
+            <button id="nav-toggler-btn" class="nav-toggler-ctr">
+              <img class="nav-toggler" src="media/bars-solid.svg" />
+            </button>
+            <div class="logo-ctr">
+              <img src="media/logo.svg" alt="LaslesVPN" />
+            </div>
+            <nav>
+              <p class="menu-title nav-title">Menu</p>
+              <ul class="nav-item-list">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#help" class="nav-link">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <button id="login-toggler-btn" class="login-toggler-ctr">
+              <img class="login-toggler" src="media/sign-in.svg" />
+            </button>
+            <div class="header-sign-btns">
+              <p class="menu-title login-title">Sign In or Join</p>
+              <button class="btn sign-in-btn">Sign In</button>
+              <button class="btn btn-light sign-up-btn">Sign Up</button>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="sec sec-2">
+        <div class="wrapper">
+          <section id="about" class="cta">
+            <div class="cta-info">
+              <div class="cta-text">
+                <h1 class="cta-text-header">
+                  Have everything be easy with <span>LaslesVPN.</span>
                 </h1>
-                <p>
-                    Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features
-                    from us.
+                <p class="cta-text-desc sub-desc">
+                  Provide a network for all your needs with ease and fun using
+                  <span>LaslesVPN</span> and discover interesting features from
+                  us.
                 </p>
-                <a href="#"> <button type="button" id="btn-Js" onmouseover="changeBG()" onmouseleave="returnBG()" class="btn my-5 rounded-3 fw-bold px-5 btn-lg">Get
-                        Started</button></a>
-                       
+              </div>
+              <div class="cta-btn-ctr">
+                <button id="btn-Js" class="cta-btn btn-dark" onmouseover="changeBG()" onmouseleave="returnBG()">Get Started</button>
+              </div>
             </div>
-            <div class="w-50">
-                <img class="img-fluid w-100" src="images/banner/banner-1.png" alt="">
+            <div class="cta-img-ctr">
+              <img src="media/cta-img.svg" />
             </div>
-        </section>
-        <!-- subscriber section  -->
-        <section class="container bg-white p-4 rounded-3  my-5">
-            <div class="row">
-                <div class="col d-flex align-items-center justify-content-center border-end-2 right-border">
-                    <i class="fas fa-user my-icon"></i>
-                    <div class="categori-info ms-4 d-flex align-items-center justify-content-center flex-column">
-                        <h3>90+</h3>
-                        <p>Users</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center border-end-2 right-border">
-                    <i class="fas fa-map-marker-alt my-icon"></i>
-                    <div class="categori-info ms-4 d-flex align-items-center justify-content-center flex-column">
-                        <h3>30+</h3>
-                        <p>Locations</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center border-end-2">
-                    <i class="fas fa-server my-icon"></i>
-                    <div class="categori-info ms-4 d-flex align-items-center justify-content-center flex-column">
-                        <h3>50+</h3>
-                        <p>Servers</p>
-                    </div>
-                </div>
+          </section>
+          <section class="stats">
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="media/stats-user-icon.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">90+</p>
+                <p class="text-label">Users</p>
+              </div>
             </div>
-
-
-        </section>
-        <!-- Features Section -->
-        <section id="features" class="container d-flex justify-content-around my-5 align-items-center">
-            <div class="w-50">
-                <img class="img-fluid w-100" src="images/banner/banner-2.png" alt="">
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="media/stats-location-icon.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">30+</p>
+                <p class="text-label">Locations</p>
+              </div>
             </div>
-            <div class="w-50 ms-5 ps-5">
-                <h1 class="fs-1">
-                    We Provide Many Features You Can Use
-                </h1>
-                <p>
-                    You can explore the features that we provide with fun and have their own functions each feature.
-                </p>
-
-                <ul class="decorations">
-                    <li class="my-3 decorations"><i class="fas fa-check-circle me-3 filled"></i> Powerfull online
-                        protection.
-                    </li>
-                    <li class="my-3"><i class="fas fa-check-circle me-3 filled"></i> Internet without borders.
-                    </li>
-                    <li class="my-3"><i class="fas fa-check-circle me-3 filled"></i> Supercharged VPN.
-                    </li>
-                    <li class="my-3"><i class="fas fa-check-circle me-3 filled"></i> No specific time limits.</li>
-                </ul>
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="media/stats-server-icon.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">50+</p>
+                <p class="text-label">Servers</p>
+              </div>
             </div>
-        </section>
-      <script src="js/index.js"></script>
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
+          </section>
+          <section id="features" class="features">
+            <div class="features-img-ctr">
+              <img src="media/features-img.svg" />
+            </div>
+            <div class="features-text">
+              <h2 class="feature-header sub-heading">
+                We Provide Many Features You Can Use
+              </h2>
+              <p class="feature-desc sub-desc">
+                Have fun exploring the features that we provide and see all the
+                functions each feature has.
+              </p>
+              <ul class="feature-list">
+                <li class="feature-list-item">
+                  <span><img src="media/feature-check.svg" /></span>Powerful
+                  online protection.
+                </li>
+                <li class="feature-list-item">
+                  <span><img src="media/feature-check.svg" /></span>Internet
+                  without borders.
+                </li>
+                <li class="feature-list-item">
+                  <span><img src="media/feature-check.svg" /></span>Supercharged
+                  VPN
+                </li>
+                <li class="feature-list-item">
+                  <span><img src="media/feature-check.svg" /></span>No specific
+                  time limits.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <script src="js/menu.js"></script>
+      <script src="js/testimonial.js"></script>
+      <script src="js/scroll.js"></script>
+    </main>
+  </body>
 </html>
